@@ -15,9 +15,10 @@
 		3EB07A151CA3BC6C004EF3B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB07A131CA3BC6C004EF3B8 /* LaunchScreen.storyboard */; };
 		3EB07A201CA3BC6C004EF3B8 /* AdvertCarouselDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB07A1F1CA3BC6C004EF3B8 /* AdvertCarouselDemoTests.swift */; };
 		3EB07A2B1CA3BC6C004EF3B8 /* AdvertCarouselDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB07A2A1CA3BC6C004EF3B8 /* AdvertCarouselDemoUITests.swift */; };
-		3EB07A3A1CA3BC9C004EF3B8 /* AdvertCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB07A391CA3BC9C004EF3B8 /* AdvertCarouselView.swift */; };
-		3EFFE2FC1CA4E25500651B51 /* AdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFE2FB1CA4E25500651B51 /* AdvertCollectionViewCell.swift */; };
-		D87CD2D61CA65DAE00B6D436 /* AdvertCarouselAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CD2D51CA65DAE00B6D436 /* AdvertCarouselAction.swift */; };
+		3EB07A3A1CA3BC9C004EF3B8 /* JOAdvertCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB07A391CA3BC9C004EF3B8 /* JOAdvertCarouselView.swift */; };
+		3EFFE2FC1CA4E25500651B51 /* JOAdvertCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFE2FB1CA4E25500651B51 /* JOAdvertCollectionViewCell.swift */; };
+		D87CD2D61CA65DAE00B6D436 /* JOAdvertCarouselAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CD2D51CA65DAE00B6D436 /* JOAdvertCarouselAction.swift */; };
+		D8A8D6541CA7C0FC000CC0A9 /* JOPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A8D6531CA7C0FC000CC0A9 /* JOPageControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +52,13 @@
 		3EB07A261CA3BC6C004EF3B8 /* AdvertCarouselDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvertCarouselDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB07A2A1CA3BC6C004EF3B8 /* AdvertCarouselDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertCarouselDemoUITests.swift; sourceTree = "<group>"; };
 		3EB07A2C1CA3BC6C004EF3B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3EB07A391CA3BC9C004EF3B8 /* AdvertCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCarouselView.swift; sourceTree = "<group>"; };
-		3EFFE2FB1CA4E25500651B51 /* AdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCollectionViewCell.swift; sourceTree = "<group>"; };
+		3EB07A391CA3BC9C004EF3B8 /* JOAdvertCarouselView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOAdvertCarouselView.swift; sourceTree = "<group>"; };
+		3EFFE2FB1CA4E25500651B51 /* JOAdvertCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOAdvertCollectionViewCell.swift; sourceTree = "<group>"; };
 		74805128EC68712CF3487373 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CF347667F88230AD730193C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D864640A1CA62ACC005A0411 /* AdvertCarouselDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AdvertCarouselDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		D87CD2D51CA65DAE00B6D436 /* AdvertCarouselAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertCarouselAction.swift; sourceTree = "<group>"; };
+		D87CD2D51CA65DAE00B6D436 /* JOAdvertCarouselAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOAdvertCarouselAction.swift; sourceTree = "<group>"; };
+		D8A8D6531CA7C0FC000CC0A9 /* JOPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JOPageControl.swift; sourceTree = "<group>"; };
 		FAFD44CABF6210484DA7ECC4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,9 +155,10 @@
 		3EB07A381CA3BC84004EF3B8 /* AdvertCarousel */ = {
 			isa = PBXGroup;
 			children = (
-				3EB07A391CA3BC9C004EF3B8 /* AdvertCarouselView.swift */,
-				D87CD2D51CA65DAE00B6D436 /* AdvertCarouselAction.swift */,
-				3EFFE2FB1CA4E25500651B51 /* AdvertCollectionViewCell.swift */,
+				D8A8D6531CA7C0FC000CC0A9 /* JOPageControl.swift */,
+				3EB07A391CA3BC9C004EF3B8 /* JOAdvertCarouselView.swift */,
+				D87CD2D51CA65DAE00B6D436 /* JOAdvertCarouselAction.swift */,
+				3EFFE2FB1CA4E25500651B51 /* JOAdvertCollectionViewCell.swift */,
 			);
 			path = AdvertCarousel;
 			sourceTree = "<group>";
@@ -352,9 +355,10 @@
 			files = (
 				3EB07A0D1CA3BC6C004EF3B8 /* ViewController.swift in Sources */,
 				3EB07A0B1CA3BC6C004EF3B8 /* AppDelegate.swift in Sources */,
-				D87CD2D61CA65DAE00B6D436 /* AdvertCarouselAction.swift in Sources */,
-				3EFFE2FC1CA4E25500651B51 /* AdvertCollectionViewCell.swift in Sources */,
-				3EB07A3A1CA3BC9C004EF3B8 /* AdvertCarouselView.swift in Sources */,
+				D87CD2D61CA65DAE00B6D436 /* JOAdvertCarouselAction.swift in Sources */,
+				D8A8D6541CA7C0FC000CC0A9 /* JOPageControl.swift in Sources */,
+				3EFFE2FC1CA4E25500651B51 /* JOAdvertCollectionViewCell.swift in Sources */,
+				3EB07A3A1CA3BC9C004EF3B8 /* JOAdvertCarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

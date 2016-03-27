@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - 广告行为逻辑
-extension AdvertCarouselView {
+extension JOAdvertCarouselView {
     
     // 定时器
     private var timer : NSTimer? {
@@ -31,7 +31,7 @@ extension AdvertCarouselView {
         guard self.adverCount > 1 else { return }
         
         timer?.invalidate()
-        timer = NSTimer(timeInterval: second, target: self, selector: #selector(AdvertCarouselView.nextAdvert), userInfo: nil, repeats: true)
+        timer = NSTimer(timeInterval: second, target: self, selector: #selector(JOAdvertCarouselView.nextAdvert), userInfo: nil, repeats: true)
         NSRunLoop.mainRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
     }
     /**
@@ -79,7 +79,7 @@ extension AdvertCarouselView {
     func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
         
         guard let indexPath = self.collectionView.indexPathsForVisibleItems().first else { return }
-        
+        setPageindex(indexPath)
         // 只要是最后一个item 就拉到1 个item
         if indexPath.item == self.collectionView.numberOfItemsInSection(indexPath.section) - 1 {
             self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: 1, inSection: indexPath.section), atScrollPosition: .CenteredHorizontally, animated: false)
@@ -88,7 +88,7 @@ extension AdvertCarouselView {
     // 手势触摸有效 滚动停止
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         guard let indexPath = self.collectionView.indexPathsForVisibleItems().first else { return }
-        
+        setPageindex(indexPath)
         // 只要是最后一个item 就拉到1 个item
         if indexPath.item == self.collectionView.numberOfItemsInSection(indexPath.section) - 1 {
             self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: 1, inSection: indexPath.section), atScrollPosition: .CenteredHorizontally, animated: false)
@@ -98,6 +98,10 @@ extension AdvertCarouselView {
             let count = self.collectionView.numberOfItemsInSection(indexPath.section) - 1
             self.collectionView.scrollToItemAtIndexPath(NSIndexPath(forItem: count - 1, inSection: indexPath.section), atScrollPosition: .CenteredHorizontally, animated: false)
         }
+    }
+    // 设置页码
+    func  setPageindex(indexPath : NSIndexPath) {
+        self.pageControl.selectIndex = self.index(indexPath: indexPath)
     }
 }
 

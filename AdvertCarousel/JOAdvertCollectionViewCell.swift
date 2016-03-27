@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdvertCollectionViewCell: UICollectionViewCell {
+class JOAdvertCollectionViewCell: UICollectionViewCell {
     
     private var _advertImage : UIImageView
     internal var advertImage : UIImageView! {

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let adview = AdvertCarouselView(frame: UIScreen.mainScreen().bounds)
+        let adview = JOAdvertCarouselView(frame: UIScreen.mainScreen().bounds)
         adview.delegate = self
         self.view .addSubview(adview)
         
@@ -32,13 +32,17 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : AdverCarouselProtocol {
-    func advertCarouselView(adverView: AdvertCarouselView, mediaImageView imageView: UIImageView, cellIndex index: Int) {
+extension ViewController : JOAdverCarouselProtocol {
+    func advertCarouselView(adverView: JOAdvertCarouselView, mediaImageView imageView: UIImageView, cellIndex index: Int) {
         imageView.contentMode = .ScaleAspectFit
-   
-        imageView.yy_setImageWithURL(NSURL(string: images![index]), options: .SetImageWithFadeAnimation)
+        
+        //Swift
+        
+        
+        imageView.yy_setImageWithURL(NSURL(string: images![index]), options: [.SetImageWithFadeAnimation, .ProgressiveBlur])
+        
     }
-    func advertCarouselView(adverView: AdvertCarouselView, didSelectItemAtIndex index: Int) {
+    func advertCarouselView(adverView: JOAdvertCarouselView, didSelectItemAtIndex index: Int) {
         UIAlertView(title: "\(index)", message: "想干嘛?", delegate: nil, cancelButtonTitle: "不想").show()
     }
 }
