@@ -14,7 +14,7 @@ class JOPageControl: UIView {
     private var oldcenter : CGPoint?
     
     
-    internal var height : CGFloat = 20.0 {
+    internal var controlHeight : CGFloat = 20.0 {
         didSet {
             sortColorSize()
         }
@@ -104,7 +104,7 @@ class JOPageControl: UIView {
      */
     func sortColorSize() {
         
-        self.frame.size = CGSizeMake(height * CGFloat(pageLayers.count), height)
+        self.frame.size = CGSizeMake(controlHeight * CGFloat(pageLayers.count), controlHeight)
         self.center     = oldcenter!
         // 排列
         for page in pageLayers {
@@ -112,7 +112,7 @@ class JOPageControl: UIView {
             page.bounds.size     = CGSizeMake(radius * 2, radius * 2)
             page.cornerRadius    = radius
             page.backgroundColor = pageColor
-            page.position        = CGPointMake(height * (0.5 + index), height * 0.5)
+            page.position        = CGPointMake(controlHeight * (0.5 + index), controlHeight * 0.5)
             
         }
         // 选中页面

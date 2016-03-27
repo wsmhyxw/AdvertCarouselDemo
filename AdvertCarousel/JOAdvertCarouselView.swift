@@ -79,7 +79,7 @@ class JOAdvertCarouselView: UIView, UICollectionViewDelegateFlowLayout, UICollec
     override func layoutSubviews() {
         super.layoutSubviews()
         collectionView.frame = self.bounds
-        pageControl.center = CGPointMake(self.frame.midX, self.frame.height - pageControl.height)
+        pageControl.center = CGPointMake(self.frame.midX, self.frame.height - pageControl.controlHeight)
     }
     
     // 变量进一步赋值
