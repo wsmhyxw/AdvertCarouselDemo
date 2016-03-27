@@ -114,6 +114,9 @@ class JOAdvertCarouselView: UIView, UICollectionViewDelegateFlowLayout, UICollec
     }
     func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath) {
         
+        (cell as! JOAdvertCollectionViewCell).label.text = "\(indexPath.item)"
+        (cell as! JOAdvertCollectionViewCell).label.sizeToFit()
+        
         if let tempProtocol = delegate {
             if let method = tempProtocol.advertCarouselView(_:mediaImageView:cellIndex:) {
                 

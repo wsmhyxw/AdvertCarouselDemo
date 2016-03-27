@@ -9,6 +9,8 @@
 import UIKit
 
 class JOAdvertCollectionViewCell: UICollectionViewCell {
+
+    let label : UILabel = UILabel()
     
     private var _advertImage : UIImageView
     internal var advertImage : UIImageView! {
@@ -34,6 +36,10 @@ class JOAdvertCollectionViewCell: UICollectionViewCell {
         _advertImage.frame = self.bounds
         _advertImage.backgroundColor = UIColor.whiteColor()
         self.addSubview(_advertImage)
+        
+        label.frame.origin = CGPointMake(20, 20)
+        self.addSubview(label)
+        
     }
     override func layoutSubviews() {
         super.layoutSubviews()
